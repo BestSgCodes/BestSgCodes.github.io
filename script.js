@@ -18,15 +18,20 @@ let countdownFunc = () => {
         count2--;
         count3--;
         count4--;
-    }
-        
-    baseCount--;
-
-    
+    } else if (baseCount < 10) {
+    minutes[0].textContent = `${count1} : 0${baseCount}`;
+    minutes[1].textContent = `${count2} : 0${baseCount}`;
+    minutes[2].textContent = `${count3} : 0${baseCount}`;
+    minutes[3].textContent = `${count4} : 0${baseCount}`;
+    } else if (baseCount>=10) {
+            
     minutes[0].textContent = `${count1} : ${baseCount}`;
     minutes[1].textContent = `${count2} : ${baseCount}`;
     minutes[2].textContent = `${count3} : ${baseCount}`;
     minutes[3].textContent = `${count4} : ${baseCount}`;
+    }
+        
+    baseCount--;
 
     if (count1 < 0) {
     minutes[0].textContent = `Arrived` ; 
