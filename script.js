@@ -37,7 +37,7 @@ let countdownFunc = () => {
     minutes[0].textContent = `Arrived` ; 
     } else if (count2 < 0) {
     minutes[1].textContent = `Arrived`;
-    } if (count3 < 0) {
+    } else if (count3 < 0) {
     minutes[2].textContent = `Arrived` ;  
     } else if (count4 < 0) {
     minutes[3].textContent = `Arrived`;
