@@ -1,0 +1,452 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  background: linear-gradient(-45deg, #0D1B2A, #1E3A5F, #2C5364, #0F2027);
+  background-size: 600% 600%;
+  animation: bgchange 15s ease infinite;
+}
+
+@keyframes bgchange {
+  0% 
+  { 
+    background-position: 0% 50%; 
+}
+  50% 
+  { 
+    background-position: 100% 50%;
+ }
+  100% 
+  { 
+    background-position: 0% 50%; 
+}
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flag {
+    height: 130px;
+    width: 150px;
+    margin-top: 10px;
+    margin-right: 40px;
+    margin-left: -140px;
+    transition: all;
+    animation: waveFlag 2s infinite;
+    transform-origin: top left;
+}
+
+@keyframes waveFlag {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(1deg); }
+  50% { transform: rotate(-1.5deg); }
+  75% { transform: rotate(1deg); }
+  100% { transform: rotate(0deg); }
+}
+
+#logo {
+    font-size: 100px;
+    color: #F1F1F1;
+}
+
+.heading {
+    text-align: center;
+    text-shadow:
+    0 0 1px #fff,
+    0 0 2px rgb(216, 223, 215),
+    0 0 4px rgb(216, 223, 215),
+    0 0 8px rgb(216, 223, 215);
+}
+
+h2{
+    font-size: 60px;
+    color: #F1F1F1;
+}
+
+.alert{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.metro, .events, .weather, .emergency{
+    background: linear-gradient(to bottom, #0468b9, #01376d);
+    height: 250px;
+    width: 600px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+    animation: burstOut 2s linear;
+}
+
+.events, .weather, .emergency {
+    background: linear-gradient(to bottom, #FF5722, #D84315);
+    height: 150px;
+    margin-top: 20px;
+}
+
+.emergency {
+    background: linear-gradient(to bottom, #7f0000, #ff0000);
+}
+
+.metro-info, .event-info, .weather-info, .emergency-info{
+    margin-left: -130px;
+    height: 150px;
+    width: 500px;
+    background: linear-gradient(to bottom, #043ca5, #033299);
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+.event-info, .weather-info, .emergency-info{
+    margin-left: -250px;
+    background: linear-gradient(to bottom, #d36703, #db5b06);
+    height: 90px;
+    margin-top: 20px;
+}
+
+.weather-info, .emergency-info{
+    margin-left: -150px;
+}
+
+.emergency-info {
+    background: linear-gradient(to bottom, #640505, #c70303);
+    margin-left: -190px;
+}
+
+.metro-logo-img, .weather-logo-img, .emergency-logo-img{
+    height: 35px;
+    width: 35px;
+}
+
+.events-logo-img{
+    height: 50px;
+    width: 50px;
+}
+
+.metro-logo, .events-logo, .weather-logo, .emergency-logo{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #276ca5;
+    font-size: 30px;
+    color: white;
+    position: relative;
+    bottom: 80px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.events-logo, .weather-logo, .emergency-logo {
+    background-color: #D84315;
+    left: 15px;
+    bottom: 40px;
+}
+
+.emergency-logo{
+    background-color: #c40505;
+}
+
+.metro-heading, .events-heading, .weather-heading, .emergency-heading{
+    font-size: 35px;
+    color: white;
+    position: relative;
+    bottom: 95px;
+    left: 40px;
+}
+
+.events-heading, .weather-heading, .emergency-heading{
+    left: 30px;
+    bottom: 52px;
+    font-size: 30px;
+}
+
+.emergency-heading {
+    left: 35px;
+}
+
+.yellow-line, .red-line, .current-events, .current-weather, .current-emergency{ 
+    margin-top: 15px;
+    height: 67.5px;
+    width: 500px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+}
+
+
+.red-line{
+    margin-top: 0px;
+}
+
+.current-events, .current-weather, .current-emergency {
+    margin-top: 30px;
+}
+
+.yellow-line-logo, .red-line-logo, .current-events-logo, .current-weather-logo, .current-emergency-logo  {
+    height: 67.5px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.yellow-logo, .red-line-logo, .current-events-logo2, .current-weather-logo2, .current-emergency-logo2{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(223, 205, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.6);
+}
+
+.red-line-logo{
+    margin-left: 5px;
+    background-color: rgb(209, 0, 0);
+}
+
+.current-events-logo2, .current-weather-logo2, .current-emergency-logo2 {
+    margin-left: 5px;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.current-events-logo4, .current-weather-logo4, .current-emergency-logo4{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+
+.yellow-line-station, .red-line-station, .current-events-list, .current-weather-list, .current-emergency-list  {
+    height: 67.5px;
+    width: 300px;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.current-events-list, .current-weather-list, .current-emergency-list {
+    margin-top: -13px;
+}
+
+.current-weather-list {
+    font-size: 40px;
+    margin-top: -22px;
+    animation: pulseTemp 1.5s infinite;
+}
+
+.current-emergency-list {
+    font-size: 20px;
+    margin-top: -22px;
+}
+
+.yellow-line-timings, .red-line-timings, .current-events-timings, .current-weather-timings, .current-emergency-timings {
+    height: 67.5px;
+    width: 150px;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.current-events-timings, .current-weather-timings, .current-emergency-timings{
+    margin-top: -13px;
+}
+
+.current-weather-timings, .current-emergency-timings{
+    margin-top: -22px;
+    font-size: auto;
+}
+
+@keyframes pulseTemp {
+  0% { transform: scale(1); color: #fff; }
+  50% { transform: scale(1.1); color: #ffef0e; }
+  100% { transform: scale(1); color: #fff; }
+}
+
+@media (max-width: 625px) {
+    .heading h2 {
+        font-size: 30px;
+    }
+
+    .flag {
+        height: 100px;
+        width: 100px;
+    }
+
+    #logo {
+        font-size: 70px;
+    }
+
+    .metro, .events, .weather, .emergency {
+        width: 400px;
+    }
+
+    .metro-info, .event-info, .weather-info, .emergency-info {
+        width: 300px;
+    }
+
+    .yellow-line, .red-line, .current-events, .current-weather, .current-emergency{
+        width: 300px;
+    }
+
+    .yellow-line-logo, .red-line-logo, .current-events-logo, .current-weather-logo, .current-emergency-logo{
+        width: 30px;
+    }
+
+    .yellow-logo, .red-line-logo, .current-events-logo2, .current-weather-logo2, .current-emergency-logo2{
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    .red-line-logo{
+        margin-left: 5px;
+    }
+
+    .current-events-logo4, .current-weather-logo4, .current-emergency-logo4 {
+        height: 20px;
+        width: 20px;
+    }
+
+    .yellow-line-station, .red-line-station, .current-events-list, .current-weather-list, .current-emergency-list {
+        width: 180px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .yellow-line-timings, .red-line-timings, .current-events-timings, .current-weather-timings, .current-emergency-timings{
+        width: 90px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .current-events-timings {
+        font-size: 10px;
+    }
+
+    .current-weather-list {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 425px) {
+    .heading h2 {
+        font-size: 25px;
+    }
+
+    .flag {
+        height: 80px;
+        width: 80px;
+    }
+
+    #logo {
+        font-size: 50px;
+    }
+
+    .metro, .events, .weather, .emergency {
+        width: 300px;
+    }
+
+    .metro-info, .event-info, .weather-info, .emergency-info {
+        width: 200px;
+    }
+
+     .metro-info{
+        margin-left: -90px;
+     }
+
+     .event-info{
+        margin-left: -180px;
+     }
+
+    .weather-info{
+        margin-left: -115px;
+    }
+
+    .emergency-info{
+        margin-left: -145px;
+    }
+
+    .yellow-line, .red-line, .current-events, .current-weather, .current-emergency{
+        width: 200px;
+    }
+
+    .yellow-line-logo, .red-line-logo, .current-events-logo, .current-weather-logo, .current-emergency-logo{
+        width: 20px;
+    }
+
+    .yellow-logo, .red-line-logo, .current-events-logo2, .current-weather-logo2, .current-emergency-logo2{
+        width: 15px;
+        height: 15px;
+        font-size: 10px;
+    }
+
+    .red-line-logo{
+        margin-left: 5px;
+    }
+
+    .current-events-logo4, .current-weather-logo4, .current-emergency-logo4 {
+        height: 15px;
+        width: 15px;
+    }
+
+    .yellow-line-station, .red-line-station, .current-events-list, .current-weather-list, .current-emergency-list {
+        width: 120px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .yellow-line-timings, .red-line-timings, .current-events-timings, .current-weather-timings, .current-emergency-timings{
+        width: 60px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .current-events-timings {
+        font-size: 8px;
+    }
+
+    .current-weather-list {
+        font-size: 20px;
+    }
+
+    .metro-heading, .events-heading, .weather-heading, .emergency-heading {
+        font-size: 20px;
+    }
+}
+
+footer {
+    background-color: black;
+    height: 30px;
+    width: 100%;
+    font-size: auto;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
