@@ -11,6 +11,22 @@ let count4 = parseInt(minutes[3].textContent) - 1;
 
 console.log(minutes)
 
+const reset1 = () => {
+count1 = parseInt(minutes[0].textContent) - 1;
+}
+
+const reset2 = () => {
+    count2 = parseInt(minutes[1].textContent) - 1;
+}
+
+const reset3 = () => {
+    count3 = parseInt(minutes[2].textContent) - 1;
+}
+
+const reset4 = () => {
+    count4 = parseInt(minutes[3].textContent) - 1;
+}
+
 let countdownFunc = () => {
     if (baseCount <= 0) {
         baseCount = 60;
@@ -34,14 +50,22 @@ let countdownFunc = () => {
     baseCount--;
 
     if (count1 < 0) {
-    minutes[0].textContent = `Arrived` ; 
-    } else if (count2 < 0) {
-    minutes[1].textContent = `Arrived`;
-    } else if (count3 < 0) {
-    minutes[2].textContent = `Arrived` ;  
-    } else if (count4 < 0) {
-    minutes[3].textContent = `Arrived`;
+        minutes[0].textContent = `Arrived`;
+        setTimeout(reset1, 30000);
     }
+    if (count2 < 0) {
+        minutes[1].textContent = `Arrived`;
+        setTimeout(reset2, 30000);
+    }
+    if (count3 < 0) { 
+        minutes[2].textContent = `Arrived`;
+        setTimeout(reset3, 30000);
+    }
+    if (count4 < 0) { 
+        minutes[3].textContent = `Arrived`;
+        setTimeout(reset4, 30000);
+    }
+
 }
 
 setInterval(countdownFunc, 1000); 
