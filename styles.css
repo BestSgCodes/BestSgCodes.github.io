@@ -233,7 +233,10 @@ h2{
     border-radius: 50%;
 }
 
-
+.current-weather-logo4 {
+    height: 60px;
+    width: 60px;
+}
 .yellow-line-station, .red-line-station, .current-events-list, .current-weather-list, .current-emergency-list  {
     height: 67.5px;
     width: 300px;
@@ -330,8 +333,13 @@ h2{
     }
 
     .current-events-logo4, .current-weather-logo4, .current-emergency-logo4 {
-        height: 20px;
-        width: 20px;
+        height: 30px;
+        width: 30px;
+    }
+
+    .current-weather-logo4{
+        height: 40px;
+        width: 40px;
     }
 
     .yellow-line-station, .red-line-station, .current-events-list, .current-weather-list, .current-emergency-list {
@@ -412,9 +420,14 @@ h2{
     }
 
     .current-events-logo4, .current-weather-logo4, .current-emergency-logo4 {
-        height: 15px;
-        width: 15px;
+        height: 20px;
+        width: 20px;
     }
+
+     .current-weather-logo4{
+        height: 30px;
+        width: 30px;
+     }
 
     .yellow-line-station, .red-line-station, .current-events-list, .current-weather-list, .current-emergency-list {
         width: 120px;

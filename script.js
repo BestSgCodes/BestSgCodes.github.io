@@ -9,7 +9,6 @@ let count2 = parseInt(minutes[1].textContent) - 1;
 let count3 = parseInt(minutes[2].textContent) - 1;
 let count4 = parseInt(minutes[3].textContent) - 1;
 
-
 let countdownFunc = () => {
     if (baseCount <= 0) {
         baseCount = 60;
