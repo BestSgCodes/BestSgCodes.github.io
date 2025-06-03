@@ -3,28 +3,34 @@ let list = document.querySelector(".weather-list");
 let weatherText = document.querySelector(".current-weather-text");
 let weatherLogo = document.querySelector(".current-weather-logo4");
 let minutes = document.querySelectorAll(".timing1");
+
+const baseTimes = [
+    parseInt((minutes[0].textContent) - 1),
+    parseInt(minutes[1].textContent) - 1,
+    parseInt(minutes[2].textContent) - 1,
+    parseInt(minutes[3].textContent) - 1
+]
+
 let baseCount = 60;
 let count1 = parseInt(minutes[0].textContent) - 1;
 let count2 = parseInt(minutes[1].textContent) - 1;
 let count3 = parseInt(minutes[2].textContent) - 1;
 let count4 = parseInt(minutes[3].textContent) - 1;
 
-console.log(minutes)
-
 const reset1 = () => {
-count1 = parseInt(minutes[0].textContent) - 1;
+count1 = baseTimes[0];
 }
 
 const reset2 = () => {
-    count2 = parseInt(minutes[1].textContent) - 1;
+    count2 = baseTimes[1];
 }
 
 const reset3 = () => {
-    count3 = parseInt(minutes[2].textContent) - 1;
+    count3 = baseTimes[2];
 }
 
 const reset4 = () => {
-    count4 = parseInt(minutes[3].textContent) - 1;
+    count4 = baseTimes[3];
 }
 
 let countdownFunc = () => {
