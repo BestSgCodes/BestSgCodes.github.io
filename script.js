@@ -77,14 +77,16 @@ let countdownFunc = () => {
 setInterval(countdownFunc, 1000); 
 
 const updateData = async () => {
-    let data = await fetch(baseURL);
-    let response = await data.json();
-    let celsius = await response.current.temp_c;
-    let weather = await response.current.condition.text;
-    let weatherIcon = await response.current.condition.icon;
+    let response = await fetch(baseURL);
+    let data = await response.json();
+    let celsius = await data.current.temp_c;
+    let weather = await data.current.condition.text;
+    let weatherIcon = await data.current.condition.icon;
     weatherLogo.src = `${weatherIcon}`;
     list.textContent= `${celsius}C`;
     weatherText.textContent = `${weather}`;
 }
 
-window.onload = updateData();
+window.onload =() =>{
+ updateData();
+ }
