@@ -8,7 +8,7 @@ const baseTimes = [
     parseInt((minutes[0].textContent) - 1),
     parseInt(minutes[1].textContent) - 1,
     parseInt(minutes[2].textContent) - 1,
-    parseInt(minutes[3].textContent) - 1
+    parseInt(minutes[3].textContent) - 1,
 ]
 
 let baseCount = 60;
