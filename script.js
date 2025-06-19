@@ -93,6 +93,7 @@ const updateData = async () => {
 }
 
 window.onload =() =>{
+    updateData()
  }
 
 toggleBtn.addEventListener("click", () => {
