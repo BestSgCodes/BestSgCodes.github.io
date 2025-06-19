@@ -99,7 +99,7 @@ window.onload =() =>{
 toggleBtn.addEventListener("click", () => {
      if (isClicked) {
         navbar.style.left = "-200px";
-        navbar.style.animation = "toggleMenu2 1s ease-out";
+        navbar.style.animation = "toggleMenu2 0.5s ease-out";
         navBg.style.opacity = "0";
         navBg.style.animation = "";
         toggleBtn.style.transform = "rotate(0deg)";
@@ -107,7 +107,7 @@ toggleBtn.addEventListener("click", () => {
         isClicked = false;
   } else {
         navbar.style.left = "0px";
-        navbar.style.animation = "toggleMenu1 1s ease-in";
+        navbar.style.animation = "toggleMenu1 0.5s ease-in";
         navBg.style.opacity = "0.5";
         navBg.style.animation = "bgColor 1s ease-in";
         toggleBtn.style.transform = "rotate(45deg)";

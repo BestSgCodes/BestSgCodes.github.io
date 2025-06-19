@@ -124,6 +124,10 @@ body {
     animation: waveFlag 2s infinite;
     transform-origin: top left;
 }
+.flag:hover {
+  transform: rotate(1deg);
+  transition: transform 0.4s;
+}
 
 @keyframes waveFlag {
   0% { transform: rotate(0deg); }
@@ -150,6 +154,14 @@ body {
 h2{
     font-size: 60px;
     color: #F1F1F1;
+}
+
+.city-vision {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #a0e9ff;
+  font-weight: 500;
+  text-align: center;
 }
 
 .alert{
@@ -187,7 +199,7 @@ h2{
     width: 500px;
     background: linear-gradient(to bottom, #043ca5, #033299);
     border-radius: 10px;
-    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px 2px rgba(3, 154, 255, 0.397);
 }
 
 
@@ -196,6 +208,7 @@ h2{
     background: linear-gradient(to bottom, #d36703, #db5b06);
     height: 90px;
     margin-top: 20px;
+    box-shadow: 0 0 10px 2px rgba(255, 188, 3, 0.397);
 }
 
 .weather-info, .emergency-info{
@@ -205,6 +218,7 @@ h2{
 .emergency-info {
     background: linear-gradient(to bottom, #640505, #c70303);
     margin-left: -190px;
+    box-shadow: 0 0 10px 2px rgba(255, 3, 3, 0.397);
 }
 
 .metro-logo-img, .weather-logo-img, .emergency-logo-img{
