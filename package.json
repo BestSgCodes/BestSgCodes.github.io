@@ -1,0 +1,24 @@
+{
+  "name": "smart-city",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^29.4.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BestSgCodes/BestSgCodes.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BestSgCodes/BestSgCodes.github.io/issues"
+  },
+  "homepage": "https://github.com/BestSgCodes/BestSgCodes.github.io#readme",
+  "description": ""
+}

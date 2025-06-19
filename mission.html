@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Our Mission</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(-45deg, #0D1B2A, #1E3A5F, #2C5364, #0F2027);
+            background-size: 600% 600%;
+            animation: bgchange 15s ease infinite;
+            color: white;
+            padding: 30px;
+        }
+
+        @keyframes bgchange {
+            0%   { 
+                background-position: 0% 50%; 
+            }
+            50%  { 
+                background-position: 100% 50%; 
+            }
+            100% { 
+                background-position: 0% 50%; 
+            }
+}
+
+        
+        .home-icon {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .home-icon a {
+            color: #ffc107;
+            text-decoration: none;
+            font-size: 26px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 5px 10px;
+            background-color: rgba(255, 193, 7, 0.1);
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        .home-icon a:hover {
+            background-color: rgba(255, 193, 7, 0.2);
+        }
+
+        .heading {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .heading h2 {
+            font-size: 45px;
+            color: #F1F1F1;
+            text-shadow: 0 0 10px #00e5ff;
+        }
+
+        .mission-box {
+            background: linear-gradient(to bottom, #0468b9, #01376d);
+            border-radius: 10px;
+            padding: 30px 20px;
+            max-width: 700px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .mission-card {
+            background: linear-gradient(to bottom, #043ca5, #033299);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 8px rgba(0, 255, 255, 0.2);
+        }
+
+        .mission-logo {
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: #ffc107;
+            text-align: center;
+        }
+
+        .mission-card h3 {
+            font-size: 22px;
+            color: #00e5ff;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .mission-card p {
+            font-size: 16px;
+            color: #f1f1f1;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 600px) {
+            .heading h2 {
+                font-size: 30px;
+            }
+
+            .mission-card h3 {
+                font-size: 18px;
+            }
+
+            .mission-card p {
+                font-size: 14px;
+            }
+
+            .mission-box {
+                padding: 20px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="home-icon">
+        <a href="index.html">🏠 Home</a>
+    </div>
+
+    <div class="heading">
+        <h2>OUR MISSION</h2>
+    </div>
+
+    <div class="mission-box">
+        <div class="mission-card">
+            <div class="mission-logo">🛠️</div>
+            <h3>Smart Infrastructure</h3>
+            <p>To build modern, efficient, and citizen-centric infrastructure across Delhi including water, power, roads, and sanitation.</p>
+        </div>
+        <div class="mission-card">
+            <div class="mission-logo">🌍</div>
+            <h3>Inclusive Growth</h3>
+            <p>To promote equity and access for all residents, ensuring every citizen benefits from digital, social, and economic initiatives.</p>
+        </div>
+        <div class="mission-card">
+            <div class="mission-logo">🧠</div>
+            <h3>Transparent Governance</h3>
+            <p>To enable participative, transparent governance using data and technology for effective decision making and accountability.</p>
+        </div>
+    </div>
+</body>
+</html>

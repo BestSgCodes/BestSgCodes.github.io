@@ -3,6 +3,11 @@ let list = document.querySelector(".weather-list");
 let weatherText = document.querySelector(".current-weather-text");
 let weatherLogo = document.querySelector(".current-weather-logo4");
 let minutes = document.querySelectorAll(".timing1");
+let navbar = document.querySelector(".navbar");
+let toggleBtn = document.querySelector(".fa-bars");
+let navBg = document.querySelector(".nav-bg");
+let constitution = document.querySelector("#constitution")
+let isClicked = false;
 
 const baseTimes = [
     parseInt((minutes[0].textContent) - 1),
@@ -88,5 +93,25 @@ const updateData = async () => {
 }
 
 window.onload =() =>{
- updateData();
  }
+
+toggleBtn.addEventListener("click", () => {
+     if (isClicked) {
+        navbar.style.left = "-200px";
+        navbar.style.animation = "toggleMenu2 1s ease-out";
+        navBg.style.opacity = "0";
+        navBg.style.animation = "";
+        toggleBtn.style.transform = "rotate(0deg)";
+        toggleBtn.style.color = "white";
+        isClicked = false;
+  } else {
+        navbar.style.left = "0px";
+        navbar.style.animation = "toggleMenu1 1s ease-in";
+        navBg.style.opacity = "0.5";
+        navBg.style.animation = "bgColor 1s ease-in";
+        toggleBtn.style.transform = "rotate(45deg)";
+        toggleBtn.style.color = "gold";
+        isClicked = true;
+  }
+})
+
