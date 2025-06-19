@@ -86,7 +86,7 @@ const updateData = async () => {
     let data = await response.json();
     let celsius = await data.current.temp_c;
     let weather = await data.current.condition.text;
-    let weatherIcon = await data.current.condition.icon;
+    let weatherIcon = await "https:" + data.current.condition.icon;
     weatherLogo.src = `${weatherIcon}`;
     list.textContent= `${celsius}C`;
     weatherText.textContent = `${weather}`;
